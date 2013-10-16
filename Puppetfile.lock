@@ -1,0 +1,29 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/apt (1.4.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (4.1.0)
+
+GIT
+  remote: git://github.com/mstrauss/puppet-editfile.git
+  ref: master
+  sha: 884efdc0997af667f24625e696630e6b1db5a952
+  specs:
+    editfile (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/garethr-docker.git
+  ref: master
+  sha: 500e81251033f2b03b2e03f6a1c240334cf89054
+  specs:
+    docker (0.4.1)
+      puppetlabs/apt (>= 1.1.0)
+      puppetlabs/stdlib (>= 4.1.0)
+
+DEPENDENCIES
+  docker (>= 0)
+  editfile (>= 0)
+  puppetlabs/apt (>= 0)
+  puppetlabs/stdlib (>= 0)
+
