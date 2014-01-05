@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   env  = ENV['PUPPET_ENV']
   env ||= 'dev'
 
-  config.vm.box = 'ubuntu-13.04_puppet-3.3' 
+  config.vm.box = 'ubuntu-13.10_puppet-3.4.0' 
   config.vm.network :public_network, :bridge => bridge
   config.vm.hostname = 'docker.local'
   config.vm.network :forwarded_port, guest: 4243, host: 4243
