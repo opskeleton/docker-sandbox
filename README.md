@@ -1,11 +1,13 @@
 # Intro 
-This project manages a sandbox for [docker](url)
+This project manages a sandbox for [docker](docker.io)
 
 # Usage
 ```bash
   $ bundle install 
   $ librarian-puppet install 
   $ vagrant up
+  # due to a bug in puppet openssl we have run it twice
+  $ vagrant provision
 ```
 
 # Copyright and license
