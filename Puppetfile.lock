@@ -11,14 +11,6 @@ FORGE
     puppetlabs/stdlib (4.1.0)
 
 GIT
-  remote: git://github.com/camptocamp/puppet-openssl.git
-  ref: master
-  sha: f5febc56299d2e371bc053ca73ea637fe0460cd2
-  specs:
-    openssl (0.1.0)
-      puppetlabs/stdlib (>= 2.0.0)
-
-GIT
   remote: git://github.com/garethr/garethr-docker.git
   ref: master
   sha: 6ba3857a225f8d86333303dc6252accbb10ddf67
@@ -33,6 +25,14 @@ GIT
   sha: 884efdc0997af667f24625e696630e6b1db5a952
   specs:
     editfile (0.0.1)
+
+GIT
+  remote: git://github.com/narkisr/puppet-openssl.git
+  ref: master
+  sha: f5febc56299d2e371bc053ca73ea637fe0460cd2
+  specs:
+    openssl (0.1.0)
+      puppetlabs/stdlib (>= 2.0.0)
 
 DEPENDENCIES
   docker (>= 0)

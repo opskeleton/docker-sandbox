@@ -13,5 +13,5 @@ mod 'docker',
 mod 'jfryman/nginx'
 
 mod 'openssl', 
-    :git => 'git://github.com/camptocamp/puppet-openssl.git'
+    :git => 'git://github.com/narkisr/puppet-openssl.git'
 
