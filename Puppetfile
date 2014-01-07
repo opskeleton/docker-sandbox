@@ -9,3 +9,9 @@ mod 'editfile',
 
 mod 'docker', 
    :git => 'git://github.com/garethr/garethr-docker.git'
+
+mod 'jfryman/nginx'
+
+mod 'openssl', 
+    :git => 'git://github.com/camptocamp/puppet-openssl.git'
+

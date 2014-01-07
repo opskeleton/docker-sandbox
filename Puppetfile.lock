@@ -1,9 +1,22 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
+    jfryman/nginx (0.0.7)
+      puppetlabs/apt (>= 1.0.0)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/apt (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/concat (1.0.0-rc1)
     puppetlabs/stdlib (4.1.0)
+
+GIT
+  remote: git://github.com/camptocamp/puppet-openssl.git
+  ref: master
+  sha: f5febc56299d2e371bc053ca73ea637fe0460cd2
+  specs:
+    openssl (0.1.0)
+      puppetlabs/stdlib (>= 2.0.0)
 
 GIT
   remote: git://github.com/garethr/garethr-docker.git
@@ -24,6 +37,8 @@ GIT
 DEPENDENCIES
   docker (>= 0)
   editfile (>= 0)
+  jfryman/nginx (>= 0)
+  openssl (>= 0)
   puppetlabs/apt (>= 0)
   puppetlabs/stdlib (>= 0)
 
