@@ -4,7 +4,7 @@ node default {
 
 
   class{'docker':
-    tcp_bind  => 'tcp://127.0.0.1:4243'
+    tcp_bind  => 'tcp://0.0.0.0:4243'
   }
 
   docker::image { 'ubuntu':
@@ -21,9 +21,14 @@ node default {
     mode   => '750',
   } ->
 
+  exec{'/root/.rnd':
+    command => 'echo `< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c100` > /root/.rnd',
+    user    => 'root',
+    path    => ['/usr/bin','/bin',]
+  } ->
+
   file { '/root/.rnd':
     ensure => present,
-    content=> $random,
     mode   => '600',
     owner  => 'root',
   } ->
@@ -45,7 +50,7 @@ node default {
 
   nginx::resource::upstream { "${fqdn}-upstream":
     ensure  => present,
-    members => ["localhost:${port}"],
+    members => ["localhost:4243"],
   } ->
 
   nginx::resource::vhost { $fqdn:
