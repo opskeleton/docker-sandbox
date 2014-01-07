@@ -29,7 +29,7 @@ GIT
 GIT
   remote: git://github.com/narkisr/puppet-openssl.git
   ref: master
-  sha: f5febc56299d2e371bc053ca73ea637fe0460cd2
+  sha: 50b35aa7fa3c51d1627cd5846e2c0dee9fa80cda
   specs:
     openssl (0.1.0)
       puppetlabs/stdlib (>= 2.0.0)
